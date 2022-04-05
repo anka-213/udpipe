@@ -116,7 +116,7 @@ void derivator_dictionary_encoder::encode(istream& is, istream& dictionary, bool
       // Add this edge also to the parent
       derinet[lemma.second.parent].children++;
 
-      if (verbose)
+      // if (verbose)
 //        cerr << lemma.first << lemma.second.comment << " -> " << lemma.second.parent << derinet[lemma.second.parent].comment << endl;
     }
 

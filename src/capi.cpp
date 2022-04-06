@@ -23,6 +23,10 @@ model* load_model(char* filename) {
   return model::load(filename);
 }
 
+void free_model(model* m) {
+  delete m;
+}
+
 // pipeline* make_pipeline(model* m, char* input, char* tagger, char* parser, char* output) {
 //   auto pl = new pipeline(m, input, tagger, parser, output);
 //   return pl;
